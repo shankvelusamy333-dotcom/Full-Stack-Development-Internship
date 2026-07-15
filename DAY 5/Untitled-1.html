@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout Website</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            padding:20px;
+            font-family:Times New Roman, serif;
+        }
+
+        .container{
+            display:grid;
+            grid-template-columns:1fr 3fr;
+            grid-template-rows:120px 250px 80px;
+            gap:20px;
+        }
+
+        .header{
+            background-color:greenyellow;
+            grid-column:1 / 3;
+            font-size:30px;
+            padding:10px;
+        }
+
+        .sidebar{
+            background-color:salmon;
+            font-size:30px;
+            padding:10px;
+        }
+
+        .main-content{
+            background-color:aqua;
+            font-size:30px;
+            padding:10px;
+        }
+
+        .footer{
+            background-color:slateblue;
+            grid-column:1 / 3;
+            font-size:30px;
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            Header
+        </div>
+
+        <div class="sidebar">
+            Sidebar
+        </div>
+
+        <div class="main-content">
+            Main Content
+        </div>
+
+        <div class="footer">
+            Footer
+        </div>
+
+    </div>
+
+    Created By Shankari V
+
+
+</body>
+</html>
